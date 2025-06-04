@@ -1,0 +1,45 @@
+This desktop GUI application detects anomalies in sensor data using Python and MATLAB. It supports multiple detection and filtering methods including Isolation Forest for unsupervised anomaly detection, Autoencoder-based anomaly identification, Frequency spectrum analysis via FFT, and Noise filtering through MATLAB.
+
+Features:
+
+- Generate sensor data before running analysis
+- Perform anomaly detection and visualize results
+- Export analysis and plots as a PDF report
+- Apply noise filtering using MATLAB integration
+
+Application Interface:
+
+- Isolation Forest detects anomalies using the IsolationForest model
+- Autoencoder performs anomaly detection with an autoencoder model
+- Frequency Analysis displays the FFT spectrum of the signal
+- Filter Noise using MATLAB applies moving average filtering
+- Generate Report exports analysis results in PDF format
+
+Requirements:
+
+- Python 3.8 or later
+- MATLAB required for noise filtering
+- Required Python packages listed in requirements.txt
+
+Running the Application:
+
+Before running the application, the sensor data file must be generated using:
+
+python generate_data.py
+
+Once the data has been generated, start the application using:
+
+python data_analisys.py
+
+Project Files:
+
+- generate_data.py is the script for generating sensor data
+- data_analisys.py is the main GUI application
+- filter_signal.m is the MATLAB script for noise filtering
+- README.md and requirements.txt contain documentation and dependencies
+
+Author:
+
+This project was developed for detecting anomalies in time-series sensor data. Contributions and improvements are welcome.
+
+
