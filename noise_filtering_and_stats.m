@@ -35,7 +35,7 @@ function filter_signal(inputFile, outputFile, filterType, cutoffFreq)
     fprintf(fid, "Noise energy removed: %.4f\n", sum((signal - filtered).^2));
     fclose(fid);
 
-    % Плот
+    % plot
     figure;
     plot(time, signal, 'r-', 'DisplayName', 'Original');
     hold on;
